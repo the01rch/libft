@@ -2,7 +2,9 @@ SRC	=	src/ft_isalpha.c\
 		src/ft_isdigit.c\
 		src/ft_isalnum.c\
 		src/ft_isascii.c\
-		src/ft_isprint.c
+		src/ft_isprint.c\
+		src/ft_toupper.c\
+		src/ft_tolower.c
 
 CC	=	gcc
 
