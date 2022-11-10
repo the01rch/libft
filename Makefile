@@ -1,4 +1,6 @@
-SRC	=	src/ft_isalpha.c
+SRC	=	src/ft_isalpha.c\
+		src/ft_isdigit.c\
+		src/ft_isalnum.c
 
 CC	=	gcc
 
