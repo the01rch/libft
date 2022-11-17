@@ -4,7 +4,12 @@ SRC	=	src/ft_isalpha.c\
 		src/ft_isascii.c\
 		src/ft_isprint.c\
 		src/ft_toupper.c\
-		src/ft_tolower.c
+		src/ft_tolower.c\
+		src/ft_strlen.c\
+		src/ft_putchar_fd.c\
+		src/ft_putstr_fd.c\
+		src/ft_putendl_fd.c\
+		src/ft_itoa.c
 
 CC	=	gcc
 
