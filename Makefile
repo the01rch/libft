@@ -11,7 +11,8 @@ SRC	=	src/ft_isalpha.c\
 		src/ft_putendl_fd.c\
 		src/ft_itoa.c\
 		src/ft_strdup.c\
-		src/ft_strncmp.c
+		src/ft_strncmp.c\
+		src/ft_strchr.c
 
 CC	=	gcc
 
