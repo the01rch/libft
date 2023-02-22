@@ -13,6 +13,7 @@ void ft_putendl_fd(char *s, int fd);
 char *ft_itoa(int n);
 char *ft_strdup(const char *s);
 int ft_strncmp(const char *s1, const char *s2, size_t n);
-char *strchr(const char *str, int c);
+char *ft_strchr(const char *str, int c);
+char *ft_strrchr(const char *str, int c);
 
 #endif

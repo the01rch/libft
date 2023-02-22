@@ -12,7 +12,9 @@ SRC	=	src/ft_isalpha.c\
 		src/ft_itoa.c\
 		src/ft_strdup.c\
 		src/ft_strncmp.c\
-		src/ft_strchr.c
+		src/ft_strchr.c\
+		src/ft_strrchr.c\
+		src/ft_strjoin.c
 
 CC	=	gcc
 
@@ -39,3 +41,5 @@ fclean: clean
 	$(RM) $(OBJ)
 
 re: fclean all
+
+.PHONY: all clean fclean re

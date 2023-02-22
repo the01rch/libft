@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 int main(int ac, char **av) {
-    const char *s1 = "redaleboss";
-    const char *s2 = "redlenul";
+    const char *s1 = "reda,le,boss";
 
-    printf("res = %d\n", ft_strncmp(s1, s2, 4));
+    printf("%s\n", ft_strrchr(s1, ','));
     return 0;
 }
