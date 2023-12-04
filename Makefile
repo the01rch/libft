@@ -6,7 +6,7 @@
 #    By: redrouic <redrouic@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 14:46:29 by redrouic          #+#    #+#              #
-#    Updated: 2023/11/27 17:41:32 by redrouic         ###   ########.fr        #
+#    Updated: 2023/12/03 19:17:28 by redrouic         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,10 +66,10 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(NAME)
+	$(RM) $(OBJ)
 
 fclean: clean
-	$(RM) $(OBJ)
+	$(RM) $(NAME)
 
 re: fclean all
 
