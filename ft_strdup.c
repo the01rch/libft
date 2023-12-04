@@ -6,14 +6,14 @@
 /*   By: redrouic <redrouic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:40:15 by redrouic          #+#    #+#             */
-/*   Updated: 2023/11/21 19:39:12 by redrouic         ###   ########.fr       */
+/*   Updated: 2023/12/04 18:51:35 by redrouic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void	ft_strcpy(char *src, char *str)
+static void	my_copy(char *src, char *str)
 {
 	int	i;
 
@@ -34,6 +34,6 @@ char	*ft_strdup(const char *s)
 	new = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (new == 0)
 		return (0);
-	ft_strcpy((char *)s, new);
+	my_copy((char *)s, new);
 	return (new);
 }

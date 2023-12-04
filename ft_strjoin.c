@@ -6,7 +6,7 @@
 /*   By: redrouic <redrouic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:42:40 by redrouic          #+#    #+#             */
-/*   Updated: 2023/11/22 20:23:54 by redrouic         ###   ########.fr       */
+/*   Updated: 2023/12/04 18:51:06 by redrouic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "libft.h"
 
-void	ft_strcpy(char *src, char *str)
+static void	my_copy(char *src, char *str)
 {
 	int	i;
 
@@ -39,7 +39,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	i = ft_strlen(s1);
 	if (new == NULL)
 		return (0);
-	ft_strcpy((char *)s1, new);
+	my_copy((char *)s1, new);
 	while (*s2)
 		new[i++] = *s2++;
 	new[i] = '\0';
