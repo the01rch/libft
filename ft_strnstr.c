@@ -6,7 +6,7 @@
 /*   By: redrouic <redrouic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:39:51 by redrouic          #+#    #+#             */
-/*   Updated: 2023/11/22 20:19:53 by redrouic         ###   ########.fr       */
+/*   Updated: 2023/12/04 20:47:59 by redrouic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	find = (char *)little;
 	str = (char *)big;
+	if (!big && !len)
+		return (NULL);
 	if (!*find)
 		return (str);
 	i = 0;

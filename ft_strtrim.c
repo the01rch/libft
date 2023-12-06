@@ -6,7 +6,7 @@
 /*   By: redrouic <redrouic@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:42:55 by redrouic          #+#    #+#             */
-/*   Updated: 2023/11/26 21:37:51 by redrouic         ###   ########.fr       */
+/*   Updated: 2023/12/04 20:48:16 by redrouic         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,6 @@ int	is_cset(char c, char const *set)
 	return (0);
 }
 
-char	*is_neg(char *new)
-{
-	new = malloc(sizeof(char) * 1);
-	if (new == NULL)
-		return (NULL);
-	new[0] = 0;
-	return (new);
-}
-
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*new;
@@ -55,7 +46,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		y--;
 	t = y - i;
 	if (t < 0)
-		return (is_neg(new));
+		return (ft_strdup(""));
 	new = malloc(sizeof(char) * (t + 2));
 	if (new == NULL)
 		return (NULL);

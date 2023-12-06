@@ -6,7 +6,7 @@
 #    By: redrouic <redrouic@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 14:46:29 by redrouic          #+#    #+#              #
-#    Updated: 2023/12/03 19:17:28 by redrouic         ###   ########.fr        #
+#    Updated: 2023/12/06 17:10:14 by redrouic         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,6 @@ SRC	=	ft_isalpha.c\
 		ft_isalnum.c\
 		ft_isascii.c\
 		ft_isprint.c\
-		ft_toupper.c\
-		ft_tolower.c\
 		ft_strlen.c\
 		ft_putchar_fd.c\
 		ft_putstr_fd.c\
@@ -61,7 +59,7 @@ all: $(NAME)
 	
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
- 
+
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
